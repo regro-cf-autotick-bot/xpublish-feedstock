@@ -24,16 +24,13 @@ requirements:
   run:
     - python >={{ python_min }}
     - cachey
-    - dask-core
     - fastapi >=0.115
-    - numcodecs
     - numpy
     - pluggy
     - pydantic >=2.5
     - toolz
     - uvicorn
     - xarray >=2025.7
-    - zarr >=3.0.7
 
 test:
   requires:
