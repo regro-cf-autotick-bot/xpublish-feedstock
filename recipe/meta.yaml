@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "xpublish" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3d091edf9b86cf2f5e0090701ea58d2aebe056e7772d78cca107d91a5627da77
+  sha256: 512f2a1d755343b6e816315166728b6ec6fbb410947239f6a79524d7ec950f2d
 
 build:
   noarch: python
@@ -25,14 +25,14 @@ requirements:
     - python >={{ python_min }}
     - cachey
     - dask-core
-    - fastapi >=0.115.0
+    - fastapi >=0.115
     - numcodecs
     - numpy
     - pluggy
-    - pydantic >=2.5.0
+    - pydantic >=2.5
     - toolz
     - uvicorn
-    - xarray >=2025.7.0
+    - xarray >=2025.7
     - zarr >=3.0.7
 
 test:
