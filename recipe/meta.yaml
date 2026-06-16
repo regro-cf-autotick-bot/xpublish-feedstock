@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "xpublish" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 512f2a1d755343b6e816315166728b6ec6fbb410947239f6a79524d7ec950f2d
+  sha256: 3fcaa76380cd638902d063bbd78e0e025bf36222a1fb44cbc59bd2b456525ded
 
 build:
   noarch: python
